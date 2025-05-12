@@ -1,0 +1,85 @@
+#movies {
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.338);
+}
+#movie {
+    margin-left: 10px;
+}
+li.Action {
+    color: crimson;
+}
+li.Adventure {
+    color:coral;
+}
+li.Animation {
+    color:indigo;
+}
+li.Biography {
+    color:darkgoldenrod;
+}
+li.Drama {
+    color:darkslategrey;
+}
+li.Fantasy {
+    color:cadetblue;
+}
+li.Music {
+    color:mediumvioletred;
+}
+li.Documentary {
+    color:royalblue;
+}
+li.Family {
+    color:slategrey;
+}
+li.History {
+    color:brown;
+}
+li.Sport {
+    color:rgb(34, 139, 34);
+}
+#movies img {
+    width: 150px;
+    height: 240px;
+    object-fit: cover;
+    /* border: 1px solid green; */
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+    background-color:rgb(233, 243, 247);
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 3px;
+    border-radius: 9px;
+    --main-color: currentColor;
+    background-color: color-mix(in srgb, var(--main-color), transparent 90%);
+      
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    /* border: 1px solid green; */
+}
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
