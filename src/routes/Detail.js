@@ -1,5 +1,6 @@
 import {useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
+import MovieDetails from '../components/MovieDetails';
 
 function Detail(){
     console.log('Detail');
@@ -14,7 +15,15 @@ function Detail(){
     useEffect(() => {
         getMovie();
     }, []);
-    return loading? <h3>loading...</h3> :<img src={detail.data.movie.background_image}></img>;
+    return loading? <h3>Loading...</h3> : 
+    <MovieDetails bgImage={detail.data.movie.background_image}
+        title={detail.data.movie.title}
+        year={detail.data.movie.year}
+        rating={detail.data.movie.rating}
+        runtime={detail.data.movie.runtime}
+        genres={detail.data.movie.genres}
+        summary={detail.data.movie.description_full}
+    />;
 }
 
 export default Detail;
