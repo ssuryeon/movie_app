@@ -5,11 +5,11 @@ import '../style/Movies.css';
 function Movies({id, coverImg, title, year}){
     return (
         <div id='movies'>
-            <Link to={`/movie/${id}`}>
+            <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
                 <img src={coverImg} />
             </Link>
             <div id='movie'>
-                <h2><Link to={`/movie/${id}`}>{title}</Link></h2>
+                <h2><Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link></h2>
                 <span>{year}</span>
             </div>
         </div>
